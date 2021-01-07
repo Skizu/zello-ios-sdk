@@ -14,6 +14,9 @@ typedef NS_ENUM(NSInteger, ZCCStreamState) {
   /// Waiting for the server or audio layer to be ready
   ZCCStreamStateStarting,
 
+  /// Server ready
+  ZCCStreamStateHasFloor,
+
   /// Running -- playing or recording
   ZCCStreamStateActive,
 

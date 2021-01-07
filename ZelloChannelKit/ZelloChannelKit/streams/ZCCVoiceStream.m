@@ -99,6 +99,9 @@ static const NSTimeInterval audioStreamTimeout = 10.0;
   switch (state) {
     case ZCCStreamStateStarting:
       return @"starting";
+          
+    case ZCCStreamStateHasFloor:
+      return @"has floor";
 
     case ZCCStreamStateActive:
       return @"active";

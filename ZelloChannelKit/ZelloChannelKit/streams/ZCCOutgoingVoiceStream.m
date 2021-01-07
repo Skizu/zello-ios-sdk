@@ -88,6 +88,8 @@
       [delegate voiceStream:self didStopWithError:error];
       return;
     }
+      
+    self.state = ZCCStreamStateHasFloor;
     self.streamId = streamId;
     [self.encoder prepareAsync:0];
   };
